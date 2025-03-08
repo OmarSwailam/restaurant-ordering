@@ -1,3 +1,37 @@
 body {
     margin: 0;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.app {
+    width: 600px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 168px;
+    background-image: url("./images/header.jpeg"); 
+    background-size: cover;  
+    background-position: center -150px; 
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.title {
+    color: #FFFFFF;
+    font-size: 39px;
+
+}
+
+.subtitle {
+    color: #FFFFFF;
+    font-size: 22.42px;
 }
