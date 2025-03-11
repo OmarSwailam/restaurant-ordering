@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -17,8 +19,21 @@
         <main>
             <div class="items" id="items"></div>
             <div class="order" id="order"></div>
-            <div class="success"></div>
-            <div class="payment"></div>
+            <div class="message-container" id="message-container"></div>
+            <div class="payment" id="payment">
+                <h1 class="payment-heading">Enter card details</h1>
+                <form id="payment-form">
+                    <input type="text" name="name" placeholder="Enter your name" aria-label="Name" required>
+                    <input type="number" name="card-number" placeholder="Enter card number" aria-label="Card Number"
+                        required>
+                    <input type="number" name="cvv" placeholder="Enter CVV" aria-label="CVV" required>
+                    <div class="form-btns">
+                        <button class="cancel-btn" id="cancel-payment-btn">Cancel</button>
+                        <button class="primary-btn" id="pay-btn">Pay</button>
+                    </div>
+
+                </form>
+            </div>
         </main>
 
     </div>
